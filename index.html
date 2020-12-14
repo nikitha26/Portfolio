@@ -9,20 +9,26 @@
   <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
 
   <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    $(window).scroll(function(){
+	  $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+    $(document.ready)
+  </script>
 </head>
 <body>
   
 <div id="content-wrapper">
   <header class="header header--bg">
     <div class="container">
-      <nav class="navbar">
+      <nav class="navbar navbar-fixed-top" style="background-color:rgb(132,96,242);">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#home">
             <img src="images/logo4.png" height="80" width="80">
           </a>  
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -32,18 +38,18 @@
           </button>
         </div>
         <!-- Navbar Start -->
-        <div class="collapse navbar-collapse" id="myNavbar" style="overflow:hidden;">
+        <div class="collapse navbar-collapse" id="myNavbar" style="overflow:hidden;border:0!important;">
           <ul class="nav navbar-nav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SKILL</a></li> 
-            <li><a href="#">EDUCATION</a></li>
-            <li><a href="#">CONTACT</a></li> 
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skill">SKILL</a></li> 
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#contact">CONTACT</a></li> 
           </ul>
         </div>
         <!-- Navbar Ended -->
       </nav>
-      <div class="header__content text-center">
+      <div class="header__content text-center" id="home">
         <span class="header__content__block">HELLO! I'AM NIKITHA</span>
         <h1 class="header__content__title">A Front End Developer</h1>
         <ul class="header__content__sub-title">
@@ -51,7 +57,7 @@
           <!-- <li>WEB DEVELOPER <span class="padding">&#45;</span></li> -->
           <!--<li>PHOTOGRAPHAR</li>  -->
         </ul>
-        <a class="header__button" href="# ">Download My Resume</a>
+        <a class="header__button" href="files/nikithamalkapuram.pdf" download>Download My Resume</a>
       </div>
       <div class="social-icon pull-right">
         <ul>
@@ -62,7 +68,7 @@
     </div>
   </header>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container about__container--narrow">
       <div class="page-section">
         <h2 class="page-section__title">ABOUT ME</h2>
@@ -102,7 +108,7 @@
     </div>
   </section>
 
-  <section class="skill skill--bg try">
+  <section class="skill skill--bg try " id="skill">
     <div class="container skill__container--narrow">
       <div class="page-section">
         <h2 class="page-section__title page-section__title--white">MY SKILLS</h2>
@@ -205,12 +211,12 @@
     </div>
   </section>
 
-  <section class="service">
+  <section class="service" id="education">
     <div class="container">
       <div class="page-section">
         <h2 class="page-section__title">MY EDUCATION</h2>
         <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
-        <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p class="page-section__paragraph"> </p>
         <div class="row gutters-70">
           <div class="col-md-4">
             <div class="thumbnail text-center">
@@ -246,12 +252,12 @@
       </div>
     </div>
   </section>
-  
-  <footer class="footer footer--bg">
+
+  <footer class="footer footer--bg" id="contact">
     <div class="container text-center">
      <h3 class="text-center" style="color: white;">Get In Touch</h3>
       <ul class="footer__contact-information">
-        <li><a href="tel:5555555555"><i class="material-icons">phone</i>9999999999 </a></li>
+        <!-- <li><a href="tel:5555555555"><i class="material-icons">phone</i>9999999999 </a></li> -->
         <li><a href="mailto:sshariar458@gmail.com"><i class="material-icons">email</i> mnikitha365@gmail.com</a></li>
         <li><a href="#"><i class="material-icons">location_on</i>Hyderabad, Beeramguda</a></li>
       </ul>
@@ -275,6 +281,8 @@
 
   <script>
       AOS.init(); 
+     
+
     $('a').click(function(e)
       {
         e.preventDefault();
