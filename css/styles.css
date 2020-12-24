@@ -1,6 +1,21 @@
 /* html {
   scroll-behavior: smooth;
 } */
+#parparticles-js{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.my-content{
+  z-index: 1;
+   padding-bottom: 40px;
+}
+.mt-n1 {
+  margin-top: -30% !important;
+  margin-bottom: 70px !important;
+}
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -118,8 +133,8 @@ html,body {
 }
 
 .header__content{
-  padding-top: 200px;
-  padding-bottom: 140px;
+  /* padding-top: 100px; */
+  /* padding-bottom: 140px; */
 }
 
 .header__content__block{

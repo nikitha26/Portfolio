@@ -14,18 +14,21 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="particles.js"></script>
+  <script type="text/javascript" src="app.js"></script>
   <script>
-    $(window).scroll(function(){
-	  $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-});
-    $(document.ready)
+  //   $(window).scroll(function(){
+  //     $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+  
+  //  });
+  //}
   </script>
 </head>
 <body>
 <div id="content-wrapper" >
    <header class="header header--bg">
     <div class="container">
-      <nav class="navbar navbar-fixed-top" style="background-color:rgb(132,96,242);">
+      <nav class="navbar navbar-fixed-top" style="background-color:rgb(132,96,242,0.6);">
         <div class="navbar-header">
           <a class="navbar-brand" href="#home">
             <img src="images/logo4.png" height="80" width="80">
@@ -46,18 +49,14 @@
             <li><a href="#contact">CONTACT</a></li> 
           </ul>
         </div>
-        <!-- Navbar Ended -->
        </nav>
-      <div class="header__content text-center ">
-        <span class="header__content__block">HELLO! I'AM NIKITHA</span>
-        <h1 class="header__content__title">A Front End Developer</h1>
-        <!-- <ul class="header__content__sub-title">
-          <li>UI&#47;UX DESIGNER <span class="padding">&#45;</span></li> 
-           <li>WEB DEVELOPER <span class="padding">&#45;</span></li> 
-          <li>PHOTOGRAPHAR</li>  
-         </ul>-->
-        <a class="header__button" href="files/nikithamalkapuram.pdf" download>Download My Resume</a>
-      </div>
+       <!-- Navbar Ended -->
+       <div id="particles-js"></div>
+      <div class="header__content text-center my-content mt-n1">
+          <span class="header__content__block">HELLO! I'AM NIKITHA</span>
+          <h1 class="header__content__title">A Front End Developer</h1>
+          <a class="header__button" href="files/nikithamalkapuram.pdf" download>Download My Resume</a>
+      </div>  
       <div class="social-icon pull-right">
         <ul>
           <li><a href="https://www.linkedin.com/in/nikithamalkapuram/" target="block"><i class="fa fa-linkedin" style="font-size:30px;" aria-hidden="true"></i></a></li>&nbsp;&nbsp;
@@ -66,7 +65,7 @@
       </div>
     </div>
   </header> 
-   
+
   
   <section class="about" id="about">
     <div class="container about__container--narrow">
@@ -321,14 +320,14 @@
     </div>
   </footer>
 </div>
-   
+<script type="text/javascript" src="particles.js"></script>
+<script type="text/javascript" src="app.js"></script>
   <script src="assets/jquery/jquery-3.2.1.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/mixitup.js"></script>
 
   <script>
-      // AOS.init(); 
-     
+    
 
     $('a').click(function(e)
       {
