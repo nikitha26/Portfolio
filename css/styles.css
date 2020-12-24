@@ -39,6 +39,9 @@ background-color: orangered;
 body{
   font-family: "Roboto", sans-serif;
   line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
 }
 
 @media (min-width: 1400px) {
