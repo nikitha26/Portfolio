@@ -46,11 +46,6 @@
   background-color: rgb(241, 229, 232);
   color:white;
   transition: 1s;
-
-}
-.nav.scrolled{
-background-color: orangered;
-
 }
 body{
   font-family: "Roboto", sans-serif;
@@ -168,10 +163,13 @@ html,body {
   border-radius: 30px;
   display: inline-block;
   font-size: 15px;
-  color:white;
+  color:black;
   font-family: Roboto-Light;
   font-weight: bold;
   margin-top: 30px;
+}
+.header__button:hover{
+  color: white;
 }
 
 .navbar .navbar-nav > li > a, .navbar .navbar-brand, .navbar .navbar-nav > li > a:focus{
@@ -383,6 +381,9 @@ html,body {
   z-index: -1;
 }
 #skill{
+  background-color:rgb(124,92,226);
+}
+#education{
   background-color:rgb(124,92,226);
 }
 
